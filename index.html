@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+</head>
+<h1 id="title"> Survey Form</h1>
+<p id="description"> You will be asked a few questions.<p>
+<form id="survey-form">
+ <div class="form-group">
+  <label id="name-label" for="name">Name</label>
+<input type="text" 
+ name="name"
+ id="name"
+ class="form-control"
+ placeholder="Enter your name"
+ required>
+ </div>
+<div class="form-group">
+ <label id="email-label" for="email">Email</label>
+<input type="email"
+ name="email"
+ id="email"
+ class="form-control"
+ placeholder="Enter your email"
+ required>
+ </div>
+<div class="form-group">
+ <label id="number-label" for="number">Age</label>
+<input type="number"
+ name="number"
+ id="number"
+ class="form-control"
+ min="10"
+ max="100"
+ placeholder="Age"
+ required>
+ </div>
+ <div class="form-group">
+ <p>Select your favorite pet:</p>
+  <select id="dropdown" name="pet" class="form-control" required>
+  <option value="cats">Cats</option>
+  <option value="dogs">Dogs</option>
+  <option value="snakes">Snakes</option>
+  <option value="other">Other</option>
+  </select>
+  </div>
+<div class="form-group">
+<p>Select your favorite music genre:</p>
+ <label for="genre1">
+ <input type="radio" id="genre1" name="genre" value="metal" class="input-radio">Metal</label>
+ <label for="genre2">
+ <input type="radio" id="genre2" name="genre" value="hip hop" class="input-radio">Hip Hop</label>
+ <label for="genre3">
+ <input type="radio" id="genre3" name="genre" value="jazz" class="input-radio">Jazz</label>
+</div>
+<div class="form-group">
+  <p> Select your gender: </p>
+<label for="gender1">
+<input type="checkbox" id="gender1" name="gender" value="female" class="input-checkbox">Female</label>
+<label for="gender2">
+<input type="checkbox" id="gender2" name="gender" value="nonbinary" class="input-checkbox">Nonbinary</label>
+<label for="gender3">
+<input type="checkbox" id="gender3" name="gender" value="male" class="input-checkbox">Male</label>
+<label for="gender4">
+<input type="checkbox" id="gender4" name="gender" value="Not listed" class="input-checkbox">Not Listed</label>
+ </div>
+<div class="form-group">
+<p>Please write your comments or suggestions:</p>
+<textarea> </textarea>
+</div>
+<div class="form-group">
+<button type="submit" id="submit" name="submit" class="submit-button">Submit</button>
+</div>
+</form>
